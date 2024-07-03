@@ -27,5 +27,18 @@ void banana(char* str, const char* charsToRemove) {
     str[a] = '\0';
 }
 int main() {
+    const int e = 100;
+    char f[e];
+    char g[e];
+
+    std::cout << "Введіть рядок: ";
+    std::cin.getline(f, e);
+
+    std::cout << "Введіть символи для видалення: ";
+    std::cin.getline(g, e);
+
+    banana(f, g);
+
+    std::cout << "Рядок після видалення символів: " << f << std::endl;
 
 }
